@@ -1,5 +1,17 @@
-# GitHub followers. Exámen 1 de WebDev.
+# GitFollowersMERN. Exámen 1 de WebDev.
 
+# Instalación 
+Para developement:
+ $cd root del proyecto
+ $npm install
+ $npm start
+ $cd front
+ $npm install
+ $npm run-script build
+ $npm start
+ 
+ DONE!
+ # Herramientas utilizadas
 Para la realización del proyecto se utilizaron herramientas como CSS, Javascript y HTML, sobre frameworks y librerías como Node, Express y React. Por último se implementó una base de datos no relacional con MongoDB
 
 # MongoDB
