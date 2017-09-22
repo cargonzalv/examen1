@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 var index = require('./server/routes/follower.js');
 
 var app = express();
+app.use(express.static(path.join(__dirname, 'public')));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
