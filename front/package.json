@@ -11,9 +11,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "heroku-postbuild": "cd front && npm --production=false && npm run build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:3000"
 }
