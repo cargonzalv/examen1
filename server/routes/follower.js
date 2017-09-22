@@ -45,19 +45,6 @@ router.get("/getFollowers/:idUser", function(req, res){
 		}
 	});
 });
-router.post("/search/:idSearch",function(req,res){
-	var new_search = req.body;
 
-	Search.create(new_search, function(err, inserted_search){
-		if(err){
-			return res.status(400).json({
-				error:err
-			});
-		} else {
-			res.status(200).json(inserted_user);
-		}
-
-	});
-})
 
 module.exports = router;
