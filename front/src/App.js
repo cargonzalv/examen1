@@ -22,6 +22,7 @@ class App extends Component {
   onSearch(user){
     const self = this;
     let datos = [];
+    this.setState({followers:[]})
     console.log(user)
     fetch("/getFollowers/" + user)
     .then((res)=>res.json())
