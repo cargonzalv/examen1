@@ -36,7 +36,7 @@ class Hijo extends React.Component {
     const self = this;
     var followers = this.state.followers;
     return (
-      <div>
+      <li>
       <div className="click-to-top"><img src={this.props.source} className="App-logo" onClick={(event) => this.handleClick(event)} />
         <span>
         {self.props.url}
@@ -47,7 +47,7 @@ class Hijo extends React.Component {
         return (<li><Hijo source={follower.avatar_url} user = {follower.login} url={follower.html_url} maxFollowers={self.props.maxFollowers}/></li>)
       })}
       </ul>
-      </div>
+      </li>
       );
   }
 }

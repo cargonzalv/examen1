@@ -69,7 +69,7 @@ class App extends Component {
       {this.state.myself != undefined && this.state.myself.length != 0 && (<ul><li className="rootLi">
         <div className="click-to-top"><img src={this.state.myself.avatar_url} className="root" />
         <span>
-        {this.state.myself.name}
+        <a target="__blank" href={this.state.myself.html_url}>{this.state.myself.name}</a>
         </span></div>
 
         </li></ul>)}
@@ -78,7 +78,7 @@ class App extends Component {
       {followers.map(function(follower, i){  
         console.log(follower)
         if(i < parseInt(self.state.maxFollowers))
-          return (<li><Hijo source={follower.avatar_url} url = {follower.html_url} user = {follower.login} maxFollowers={self.state.maxFollowers}/></li>)
+          return (<Hijo source={follower.avatar_url} url = {follower.html_url} user = {follower.login} maxFollowers={self.state.maxFollowers}/>)
       })}
       </ul>
       </div>
